@@ -10,6 +10,10 @@ public class Tabela
     public int qtd_cols;
     public string caminhoArquivo;
 
+    // Variáveis para simular I/O
+    private int leituras = 0;
+    private int escritas = 0;
+
     public Tabela(string caminhoArquivo)
     {
         this.caminhoArquivo = caminhoArquivo;
@@ -31,6 +35,7 @@ public class Tabela
             if (paginaAtual.qtd_tuplas_ocup == 10)
             {
                 pags.Add(paginaAtual);
+                leituras++; // Simula leitura de página
                 paginaAtual = new Pagina();
             }
 
@@ -38,7 +43,10 @@ public class Tabela
         }
 
         if (paginaAtual.qtd_tuplas_ocup > 0)
+        {
             pags.Add(paginaAtual);
+            leituras++; // Última página
+        }
     }
 
     public List<string[]> GetTodasTuplasOrdenadas()
@@ -67,24 +75,33 @@ public class Tabela
             if (paginaAtual.qtd_tuplas_ocup == 10)
             {
                 pags.Add(paginaAtual);
+                escritas++; // Simula escrita de página ordenada
                 paginaAtual = new Pagina();
             }
             paginaAtual.tuplas[paginaAtual.qtd_tuplas_ocup++] = nova;
         }
+
         if (paginaAtual.qtd_tuplas_ocup > 0)
+        {
             pags.Add(paginaAtual);
+            escritas++; // Última página ordenada
+        }
     }
 
     public int IndiceColuna(string nomeColuna)
     {
-        // Assume que a primeira linha do CSV é o cabeçalho
         string cabecalho = File.ReadLines(caminhoArquivo).First();
         var colunas = cabecalho.Split(',');
         for (int i = 0; i < colunas.Length; i++)
             if (colunas[i].Trim().Equals(nomeColuna.Trim(), StringComparison.OrdinalIgnoreCase))
                 return i;
+
         throw new Exception($"Coluna '{nomeColuna}' não encontrada no arquivo {caminhoArquivo}.");
     }
 
+    // Métricas
     public int NumPaginasLidas() => pags.Count;
+    public int NumLeituras() => leituras;
+    public int NumEscritas() => escritas;
+    public int TotalIOs() => leituras + escritas;
 }

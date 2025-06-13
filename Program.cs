@@ -13,7 +13,7 @@ class Program
         pais.CarregarDados();
 
         // IMPLEMENTE O OPERADOR E DEPOIS EXECUTE AQUI
-         Operador op = new Operador(vinho, uva, "vinho_id", "uva_id");
+         Operador op = new Operador(vinho, uva, "vinho_id","uva_id");
         //// significa: SELECT * FROM Vinho V, Uva U WHERE V.vinho_id = U.uva_id
         //// IMPORTANTE: isso é só um exemplo, podem ser tabelas/colunas distintas.
         //// genericamente: Operador(tabela_1, tabela_2, col_tab_1, col_tab_2):

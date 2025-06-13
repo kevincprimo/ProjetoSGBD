@@ -25,6 +25,7 @@ public class Operador
 
     public void Executar()
     {
+        numIOs = tabela1.TotalIOs() + tabela2.TotalIOs();
         // 🔍 ETAPA 1: Ordenação externa simulada
         tabela1.OrdenarPor(col1);
         tabela2.OrdenarPor(col2);
