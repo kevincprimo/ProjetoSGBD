@@ -1,0 +1,14 @@
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\bin\Debug\net9.0\ProjetoSGBD.exe
+C:\Users\Chuveiro Elétrico\ProjetoSGBD\bin\Debug\net9.0\ProjetoSGBD.deps.json
+C:\Users\Chuveiro Elétrico\ProjetoSGBD\bin\Debug\net9.0\ProjetoSGBD.runtimeconfig.json
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\bin\Debug\net9.0\ProjetoSGBD.dll
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\bin\Debug\net9.0\ProjetoSGBD.pdb
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\ProjetoSGBD.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\ProjetoSGBD.AssemblyInfoInputs.cache
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\ProjetoSGBD.AssemblyInfo.cs
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\ProjetoSGBD.csproj.CoreCompileInputs.cache
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\ProjetoSGBD.dll
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\refint\ProjetoSGBD.dll
+c:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\ProjetoSGBD.pdb
+C:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\ProjetoSGBD.genruntimeconfig.cache
+C:\Users\Chuveiro Elétrico\ProjetoSGBD\obj\Debug\net9.0\ref\ProjetoSGBD.dll
